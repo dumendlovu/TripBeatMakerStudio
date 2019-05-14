@@ -1,25 +1,25 @@
 window.addEventListener('load', () =>{
-  const sounds = document.querySelectorAll('.sound');
   const pads = document.querySelectorAll('.pads div');
+  const sounds = document.querySelectorAll('.sound');
   const visual = document.querySelector('.visual');
   const colors = [
-    "red",
-    "blue",
-    "green",
-    "yellow",
-    "pink",
-    "silver"
+    "#FF5714",
+    "#FFB800",
+    "#E4FF1A",
+    "#6EEB83",
+    "#1BE7FF",
+    "#587291"
   ];
 
   //play sounds
   pads.forEach((pad, index) => {
     pad.addEventListener('click', function() {
       sounds[index].currentTime = 0;
-      sounds[index].play
-
+      sounds[index].play;
       createBubbles(index);
     });
   });
+
   //Visuals
   const createBubbles = (index) =>{
     const bubble = document.createElement("div");
