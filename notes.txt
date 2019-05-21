@@ -1,3 +1,12 @@
-# make the drum machine key presses based rather than clicks
-# add my own Flare - Done
-# fix playback issue
+# make the drum machine key presses based rather than clicks - DONE
+# add my own Flare - DONE
+# fix playback issue - FIXED
+
+
+keyCode
+Q = 81
+W = 87
+E = 69
+I = 73
+O = 79
+P = 80

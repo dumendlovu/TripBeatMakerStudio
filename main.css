@@ -31,8 +31,16 @@ header p{
 }
 .pads > div{
   flex: 1;
+  color: rgba(232,235,228,1);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #080708;
+  font-size: 52px;
+  text-align: center;
   height: 100px;
   width: 100px;
+}
+.pads > div:hover{
+  filter: brightness(125%);
 }
 .pad1{
   background: #FF5714;

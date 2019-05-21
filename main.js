@@ -15,7 +15,7 @@ window.addEventListener('load', () =>{
   pads.forEach((pad, index) => {
     pad.addEventListener('click', function() {
       sounds[index].currentTime = 0;
-      sounds[index].play;
+      sounds[index].play();
       createBubbles(index);
     });
   });
@@ -29,5 +29,39 @@ window.addEventListener('load', () =>{
     bubble.addEventListener('animationend', function () {
       visual.removeChild(this);
     });
+  };
+
+  //KeyPress
+  window.addEventListener("keydown", event => {
+    let index;
+    switch (event.keyCode) {
+      case 81:
+        index = 0;
+        break;
+      case 87:
+        index = 1;
+        break;
+      case 69:
+        index = 2;
+        break;
+      case 73:
+        index = 3;
+        break;
+      case 79:
+        index = 4;
+        break;
+      case 80:
+        index = 5;
+        break;
+      default:
+    }
+    soundPlay(index);
+  });
+
+  //soundPlay
+  const soundPlay = (index)=>{
+    sounds[index].currentTime = 0;
+    sounds[index].play();
+    createBubbles(index);
   };
 });
