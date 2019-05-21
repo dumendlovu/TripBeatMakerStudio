@@ -10,3 +10,6 @@ E = 69
 I = 73
 O = 79
 P = 80
+
+
+Safari doesn't seem playback only after the first sound is finished need a bug check. 
