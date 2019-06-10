@@ -23,6 +23,11 @@ header h1{
 }
 header p{
   font-size: 20px;
+  text-align: center;
+}
+header p span{
+  font-size: 12px;
+  font-weight: bold;
 }
 .pads{
   background: lightblue;
